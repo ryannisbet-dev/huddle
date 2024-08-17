@@ -1,0 +1,79 @@
+@import '../../Sass/Variables.scss';
+
+
+.Logo {
+    float: left;
+    padding: 1%;
+}
+
+.HeaderButton {
+
+    button{
+        border: $pink 1px solid;
+        background: none;
+        float: right;
+        margin: 1%;
+        color: $pink;
+        border-radius: 20px;
+        width: 150px;
+        height: 30px;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: $header-font;
+    }
+
+    button:hover {
+        border: $light-pink 1px solid;
+        color: $light-pink;
+    }
+
+
+}
+
+
+
+//Tablet 
+
+@media only screen and (min-width : 768px) and (max-width : 1025px) {
+    .Logo {
+        float: left;
+        padding: 3%;
+    }
+
+    
+    .HeaderButton {
+        padding: 2%;
+    }
+    
+  
+}
+
+//Mobile 
+
+
+@media only screen and (min-width : 300px) and (max-width : 767px) {
+
+    .Logo {
+        width: 40%;
+        padding: 3%;
+        img {
+         width: 100%;
+        }
+    }
+
+
+    .HeaderButton {
+        button{
+            width: 100px;
+        }
+
+    
+    }
+
+    
+
+  
+}
+
+
+
